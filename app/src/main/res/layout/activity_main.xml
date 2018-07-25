@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="text|textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/resourceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resource Id"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/empName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/empDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designation"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/managerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manager Email"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/empEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/empNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Number"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="goListViewPage"
+            android:text="Check All Resource" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
